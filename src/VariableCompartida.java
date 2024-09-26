@@ -1,6 +1,6 @@
 
 
-public class VariableCompartida extends Thread {
+public class VariableCompartida{
 
     private int v;
 
@@ -16,14 +16,6 @@ public class VariableCompartida extends Thread {
         this.v = v;
     }
 
-    public void incrementar(int inc){
-        this.v += inc;
-    }
-
-    @Override
-    public void run(){
-        incrementar(10);
-    }
 
 
 }

@@ -4,11 +4,12 @@ public class Principal {
         VariableCompartida vc = new VariableCompartida(5);
         VariableCompartida vc2 = new VariableCompartida(5);
 
-        vc.start();
-        vc2.start();
 
+        Hebra hilo1 = new Hebra(vc);
+        Hebra hilo2 = new Hebra(vc2);
 
-        System.out.println("Resultado hebra 1: "+vc.getV()+"\n Resultado hebra 2: "+vc2.getV());
+        hilo1.start();
+        hilo2.start();
 
     }
 }
