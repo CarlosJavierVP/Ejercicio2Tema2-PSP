@@ -8,7 +8,8 @@ public class Hebra extends Thread{
 
     public void incrementar(int inc){
         for (int i = 0; i<inc; i++){
-           vc.setV(vc.getV()+inc);
+            vc.setV(vc.getV()+inc);
+            System.out.println(vc.getV());
         }
         System.out.println("Hilo: "+vc.getV());
 
