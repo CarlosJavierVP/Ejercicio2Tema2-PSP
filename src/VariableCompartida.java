@@ -13,11 +13,10 @@ public class VariableCompartida {
         this.v = v;
     }
 
-    public int incrementar(int inc){
-        int resultado = 0;
-        resultado += v+inc;
-
-        return resultado;
+    public void incrementar(int inc){
+        int resultado =0;
+        resultado += getV()+inc;
+        setV(resultado);
     }
 
 
