@@ -8,6 +8,11 @@ public class Principal {
 
         hilo1.start();
         hilo2.start();
-
     }
 }
+
+/*
+* Los resultados van aumentando progresivamente de 10 en 10, de la manera que se esperaba
+* Sin embargo, los resultados finales de los dos hilos son distintos
+*
+* */
