@@ -1,9 +1,12 @@
 
 
-public class VariableCompartida {
+public class VariableCompartida extends Thread {
 
     private int v;
 
+    public VariableCompartida(int v) {
+        this.v = v;
+    }
 
     public int getV() {
         return v;
@@ -14,9 +17,12 @@ public class VariableCompartida {
     }
 
     public void incrementar(int inc){
-        int resultado =0;
-        resultado += getV()+inc;
-        setV(resultado);
+        this.v += inc;
+    }
+
+    @Override
+    public void run(){
+        incrementar(10);
     }
 
 
